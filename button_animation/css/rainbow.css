@@ -1,0 +1,52 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 97vh;
+	background: #000;
+}
+.container ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.container ul li{
+	display: inline;
+	margin: 0 25px;
+
+}
+.container ul li a{
+	padding: 14px 25px;
+	text-decoration: none;
+	color: #000;
+	font-family: raleway;
+	background: #333;
+	color: #fff;
+	border-radius: 5px;
+}
+.container ul li a:hover{
+   background-image: linear-gradient(90deg,
+      #E7484F,
+      #E7484F 16.65%,
+      #F68B1D 16.65%,
+      #F68B1D 33.3%,
+      #FCED00 33.3%,
+      #FCED00 49.95%,
+      #009E4F 49.95%,
+      #009E4F 66.6%,
+      #00AAC3 66.6%,
+      #00AAC3 83.25%,
+      #732982 83.25%,
+      #732982 100%,
+      #E7484F 100%);
+   animation: slidebg 5s linear infinite alternate;
+   color: #000;
+   font-weight: bolder;
+   text-shadow: 0 2px 1px #fff;
+}
+@keyframes slidebg{
+	to{
+		background-position: 20vh;
+
+	}
+}
